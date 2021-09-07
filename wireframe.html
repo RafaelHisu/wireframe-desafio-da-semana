@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>Wireframe</title>
+    </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+      
+         * {
+                font-family: 'Urbanist', sans-serif;
+            }
+
+        body {
+            background-image: url(imagens/fundosmart.png);
+            background-size: cover;
+        }
+
+        .block {
+            display: flex;
+            background-color: white;
+            border: 10px solid #fcf765;
+            width: end;
+            height: 20%;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            padding: 8%;   
+            background-image: url(imagens/yellowsmart.png) ;
+            background-size: cover;
+        }
+
+
+        input {
+            grid-column: 2;
+            border: 0;
+            border-radius: 3px;
+            background: orange;
+            opacity: 80%;
+            padding: 4%;  
+            color: black;        
+        }
+
+     
+
+        label {
+            display: flex;
+            justify-content: center;    
+            font-size: 100%;
+            color: white;
+            text-shadow: 1px 1px black;
+        }
+
+        h2 {
+            font-size: 300%;
+            text-align: center;
+            color: #fcf765;
+            text-shadow: 1px 1px black;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 35% 1fr;
+            grid-gap: 10px;
+           
+        }
+
+        .t1 {
+            grid-column: 1/2;
+        }
+
+        .f1 {        
+            grid-column: 2/3;
+        }
+
+        select {
+            border-radius: 3px;
+            background: orange;
+            opacity: 80%;
+            padding: 1%;  
+            color: black;  
+            border: 0;
+        }
+
+        .div1 {
+            margin-right: 50%;
+            margin-top: -5%;
+        }
+
+        .bt, a[type=button] {
+                text-decoration: none;
+                background: #fcf765;
+                color: orange; 
+                cursor:pointer;
+                transition: all .3s; 
+                padding:10%;
+                border-radius: 3px;
+                border: 3px solid orange;
+                margin-left: 200%;
+                      
+        }
+        .bt:hover {
+                color:#fcf765;
+                background:orange;
+                padding:11%;
+                border: 2px solid #fcf765;
+        }
+
+        .l1 {
+            margin-top: -30%
+        }
+
+        @media only screen and (max-width: 720px) {
+        /* For mobile phones: */
+        {
+         width: 100%;
+        } 
+        .bt {
+            margin-left: 170px;
+            margin-top: 100px;
+
+        }
+
+        .l1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .block {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+          
+        
+        }
+        form {
+            display: flex;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            justify-items: center;
+            padding: 45%;
+
+        }
+
+        .t1 {
+            grid-column: 1/2;
+            font-size: 200%;
+        }
+
+        .f1 {    
+            display: flex;    
+            grid-column: 1/2;
+            justify-content: center;
+
+        }
+
+        input {
+            padding: 8%;
+        }
+    }
+    </style>
+
+
+    <body>
+        <h2>Simulador</h2>
+        <div class='block'>
+            <div class='div1'>
+                <form>
+                 
+                        <div class='t1'>
+                            <label>Nome:</label>
+                        </div>
+                        <div class='f1'>
+                            <input type='text' placeholder="Informe aqui seu nome">
+                        </div>
+                 
+                        <div class='t1'>
+                             <label>Mensalidade:</label>
+                        </div>
+                        <div class='f1'>
+                             <input type='text' placeholder='Digite apenas números'>
+                        </div>
+                        <div class='t1'>
+                            <label>Tempo:</label>
+                        </div>
+                        <div class='f1'>
+                            <select name='tempo'>
+                                <option value='0'>1 Ano</option>
+                                <option value='1'>2 Anos</option>
+                                <option value='2'>3 Anos</option>
+                                <option value='3'>4 Anos</option>
+                                <option value='4'>5 Anos</option>
+                                <option value='5'>6 Anos</option>
+                                <option value='6'>7 Anos</option>
+                                <option value='7'>8 Anos</option>
+                            </select>
+                           
+                       </div>         
+                </form>
+
+
+            <div class='l1'>
+                <a class='bt' href='wireframe2.html'>Simular</a>
+            </div>
+
+
+            </div>
+           
+        </div>
+
+    </body>
+</html>
